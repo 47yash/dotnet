@@ -4,14 +4,14 @@
     "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj": {
+    "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj",
-        "projectName": "DAL",
-        "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj",
+        "projectName": "BOL",
+        "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj",
         "packagesPath": "C:\\Users\\yashu47\\.nuget\\packages\\",
-        "outputPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\obj\\",
+        "outputPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yashu47\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,69 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\yashu47\\.nuget\\packages\\",
+        "outputPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\yashu47\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj": {
+                "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
