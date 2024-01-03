@@ -1,0 +1,12 @@
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.GeneratedMSBuildEditorConfig.editorconfig
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.AssemblyInfoInputs.cache
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.AssemblyInfo.cs
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.csproj.CoreCompileInputs.cache
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.sourcelink.json
+C:\YASHU47\dotnet\dotnet\BOL\bin\Debug\net8.0\BOL.deps.json
+C:\YASHU47\dotnet\dotnet\BOL\bin\Debug\net8.0\BOL.dll
+C:\YASHU47\dotnet\dotnet\BOL\bin\Debug\net8.0\BOL.pdb
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.dll
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\refint\BOL.dll
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\BOL.pdb
+C:\YASHU47\dotnet\dotnet\BOL\obj\Debug\net8.0\ref\BOL.dll

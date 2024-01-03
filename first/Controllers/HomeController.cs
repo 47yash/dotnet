@@ -18,6 +18,12 @@ public class HomeController : Controller
         return View();
     }
 
+//   public IActionResult Articles()
+//     {
+//         Console.WriteLine("HomeController");
+//         return View();
+//     }
+
     public IActionResult Privacy()
     {
         return View();

@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BOL\BOL.csproj" />
+    <!-- <ProjectReference Include="..\BLL\Bll.csproj" /> -->
   </ItemGroup>
 
   <ItemGroup>

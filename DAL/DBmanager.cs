@@ -1,18 +1,19 @@
 ﻿namespace DAL;
-using MySql.Data.MySqlClient;
 using BOL;
+using MySql.Data.MySqlClient;
+using System.Collections.Generic;
 
-public DBManager
-{
+
+public class DBManager{
     public static string conString=@"server=localhost;port=3306;user=root;password=Sher@360;database=practice";
-    public static list<Article> GetArticles(){
+    public static List<Article> GetArticles(){
 
     
-    list<Article> art=new list<Article>;
+    List<Article> art=new List<Article>();
     MySqlConnection con=new MySqlConnection();
     con.ConnectionString=conString;
     try{
-        con.open();
+        con.Open();
         MySqlCommand cmd=new MySqlCommand();
         cmd.Connection=con;
         string qry="select * from Articles";
@@ -25,19 +26,20 @@ public DBManager
 
                     Article a= new Article{
                         Id= Id,
-                        name=name,
-                        author=author,
+                        Name=name,
+                        Author=author,
                     };
-                    art.add(a);
+                    art.Add(a);
         }
+    }
         catch(Exception e){
-            Console.WriteLine(ee.Message);
+            Console.WriteLine(e.Message);
         }
         finally{
-            con.close();
+            con.Close();
         }
         return art;
     }
 
-    }
 }
+    
