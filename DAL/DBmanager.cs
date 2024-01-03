@@ -13,22 +13,23 @@ public class DBManager{
     MySqlConnection con=new MySqlConnection();
     con.ConnectionString=conString;
     try{
-        con.Open();
+        con.Open();         
         MySqlCommand cmd=new MySqlCommand();
         cmd.Connection=con;
-        string qry="select * from Articles";
+        string qry="select * from Article";
         cmd.CommandText=qry;
         MySqlDataReader reader=cmd.ExecuteReader();
         while(reader.Read()){
-              int Id = int.Parse(reader["Id"].ToString());
+              int id = int.Parse(reader["Id"].ToString());
                     string name = reader["name"].ToString();
                     string author = reader["author"].ToString();
 
                     Article a= new Article{
-                        Id= Id,
+                        Id= id,
                         Name=name,
                         Author=author,
                     };
+                    // Console.WriteLine(id+" "+name+" "+author);
                     art.Add(a);
         }
     }
@@ -41,5 +42,11 @@ public class DBManager{
         return art;
     }
 
+
+    
+
+
+
+  
 }
     

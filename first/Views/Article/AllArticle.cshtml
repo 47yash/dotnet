@@ -1,0 +1,17 @@
+@using System.Collections.Generic;
+@using BOL;
+@{
+    ViewData["Title"] = "Article";
+}
+
+<div>
+<p></p>
+    @{
+        List<Article> alist = (List<Article>)ViewData["articles"];
+        <ol>
+        @foreach(Article a in alist){
+            <li>@a.Id @a.Name @a.Author</li><a href=></a>
+        }
+        </ol>
+    }
+</div>

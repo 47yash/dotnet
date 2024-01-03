@@ -1,6 +1,9 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using first.Models;
+using BOL;
+using BLL;
+using System.Collections.Generic;
 
 namespace first.Controllers;
 
@@ -18,21 +21,28 @@ public class ArticleController : Controller
         return View();
     }
 
-  public IActionResult Articles()
+  public IActionResult AllArticle()
     {
         Console.WriteLine("ArticleController");
+        ArticleManager am=new ArticleManager();
+        List<Article> alist = am.GetAllArticles();
+        ViewData["Articles"] = alist;
         return View();
     }
 
-    [HttpPost]
-    public IActionResult Articles(int id, string name, string author)
-    {
-        return View();
-    }
+    // [HttpPost]
+    // public IActionResult Articles()
+    // {
+        
+
+    //     return View();
+    // }
+
+    
 
 
 
-  public IActionResult AllArticles()
+  public IActionResult Articles()
     {
         Console.WriteLine("ArticleController");
         return View();
