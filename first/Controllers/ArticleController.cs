@@ -41,18 +41,62 @@ public class ArticleController : Controller
     
 
 
-
+    [HttpGet]
   public IActionResult Articles()
     {
-        Console.WriteLine("ArticleController");
+        
         return View();
     }
-
-   
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    
+    [HttpPost]
+    public IActionResult Articles(int id,string nm,string author)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        // Console.WriteLine(id+nm+author);
+        ArticleManager am=new ArticleManager();
+        
+        bool flag=am.InsertArticles(id,nm,author);
+
+        return View();
+        
     }
+    [HttpGet]
+
+     public IActionResult UpdateArticle()
+    {
+        
+        return View();
+    }
+    
+    [HttpPost]
+    public IActionResult UpdateArticle(int id,string nm,string author)
+    {
+        // Console.WriteLine(id+nm+author);
+        ArticleManager am=new ArticleManager();
+        
+        bool flag=am.UpdateArticle(id,nm,author);
+
+        return View();
+        
+    }
+
+
+    [HttpGet]
+     public IActionResult Delete()
+    {
+        
+        return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+        // Console.WriteLine(id+nm+author);
+        ArticleManager am=new ArticleManager();
+        
+        bool flag=am.DeleteArticle(id);
+
+        return View();
+        
+    }
+
 }

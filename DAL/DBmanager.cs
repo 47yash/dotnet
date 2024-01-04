@@ -20,7 +20,7 @@ public class DBManager{
         cmd.CommandText=qry;
         MySqlDataReader reader=cmd.ExecuteReader();
         while(reader.Read()){
-              int id = int.Parse(reader["Id"].ToString());
+                    int id = int.Parse(reader["Id"].ToString());
                     string name = reader["name"].ToString();
                     string author = reader["author"].ToString();
 
@@ -41,6 +41,82 @@ public class DBManager{
         }
         return art;
     }
+    
+    public static bool InsertArticles(int id,string nm,string author) {
+        bool status=false;
+
+        string query="insert into article values(@id,@nm,@author) ";
+
+        MySqlConnection con =new MySqlConnection();
+        con.ConnectionString=conString;
+        try{
+            con.Open();
+            MySqlCommand cmd=new MySqlCommand(query,con);
+            cmd.Parameters.AddWithValue("@id",id);
+            cmd.Parameters.AddWithValue("@nm",nm);
+            cmd.Parameters.AddWithValue("@author",author);
+            cmd.ExecuteNonQuery();
+            status=true;
+        }
+        catch (Exception e){
+            throw e;
+        }
+        finally{
+            con.Close();
+        }
+        return status;
+
+    }
+
+    public static bool UpdateArticle(int id,string nm,string author){
+        bool status =false;
+        string query ="update article set name=@nm,author=@author where id=@id";
+        MySqlConnection con=new MySqlConnection();
+        con.ConnectionString=conString;
+        try{
+            con.Open();
+            MySqlCommand cmd=new MySqlCommand(query,con);
+            cmd.Parameters.AddWithValue("@id",id);
+            cmd.Parameters.AddWithValue("@nm",nm);
+            cmd.Parameters.AddWithValue("@author",author);
+            cmd.ExecuteNonQuery();
+            status=true;
+
+
+        }
+        catch(Exception e){
+            throw e;
+        }
+        finally{
+            con.Close();
+        }
+        return status;
+
+    }
+
+   public static bool DeleteArticle(int id){
+    bool status=false;
+    string query="delete from article where id=@id";
+    MySqlConnection con=new MySqlConnection();
+    con.ConnectionString=conString;
+    try
+    {
+        con.Open();
+        MySqlCommand cmd=new MySqlCommand(query,con);
+        cmd.Parameters.AddWithValue("@id",id);
+        cmd.ExecuteNonQuery();
+        status=true;
+
+
+    }catch(Exception e){
+        throw e;
+
+    }finally{
+        con.Close();
+    }
+    return status;
+
+   }
 
 
     
