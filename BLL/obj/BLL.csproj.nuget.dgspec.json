@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\YASHU47\\dotnet\\second\\BLL\\BLL.csproj": {}
+    "C:\\YASHU47\\dotnet\\dotnet\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\YASHU47\\dotnet\\second\\BLL\\BLL.csproj": {
+    "C:\\YASHU47\\dotnet\\dotnet\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\YASHU47\\dotnet\\second\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\YASHU47\\dotnet\\dotnet\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\YASHU47\\dotnet\\second\\BLL\\BLL.csproj",
+        "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\yashu47\\.nuget\\packages\\",
-        "outputPath": "C:\\YASHU47\\dotnet\\second\\BLL\\obj\\",
+        "outputPath": "C:\\YASHU47\\dotnet\\dotnet\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yashu47\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj": {
-                "projectPath": "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj"
+              "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj": {
+                "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj"
               },
-              "C:\\YASHU47\\dotnet\\second\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\YASHU47\\dotnet\\second\\DAL\\DAL.csproj"
+              "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj": {
+    "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj",
+        "projectUniqueName": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj",
         "projectName": "BOL",
-        "projectPath": "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj",
+        "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj",
         "packagesPath": "C:\\Users\\yashu47\\.nuget\\packages\\",
-        "outputPath": "C:\\YASHU47\\dotnet\\second\\BOL\\obj\\",
+        "outputPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yashu47\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -117,14 +117,14 @@
         }
       }
     },
-    "C:\\YASHU47\\dotnet\\second\\DAL\\DAL.csproj": {
+    "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\YASHU47\\dotnet\\second\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\YASHU47\\dotnet\\second\\DAL\\DAL.csproj",
+        "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\yashu47\\.nuget\\packages\\",
-        "outputPath": "C:\\YASHU47\\dotnet\\second\\DAL\\obj\\",
+        "outputPath": "C:\\YASHU47\\dotnet\\dotnet\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yashu47\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -139,8 +139,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj": {
-                "projectPath": "C:\\YASHU47\\dotnet\\second\\BOL\\BOL.csproj"
+              "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj": {
+                "projectPath": "C:\\YASHU47\\dotnet\\dotnet\\BOL\\BOL.csproj"
               }
             }
           }
