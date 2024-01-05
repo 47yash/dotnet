@@ -1,0 +1,23 @@
+@using BOL;
+@{
+    ViewData["Title"] = "All Students";
+}
+@using System.Collections.Generic
+
+
+
+<div>
+    @{
+        List<Student> sl=(List<Student>)ViewData["Students"];
+    }
+    <ul>
+        
+        @foreach(Student s in sl){
+
+        <li>@s.Id @s.name @s.roll</li>
+            }
+        
+
+    </ul>
+
+</div>
